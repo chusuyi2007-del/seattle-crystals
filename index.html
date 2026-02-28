@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SEA Bloom Crystals — Seattle Crystal DIY Studio</title>
+<meta name="description" content="Intimate crystal DIY experiences in Seattle. Handcraft your own crystal jewelry in a guided, intentional setting. Small groups, natural stones, Pacific Northwest vibes.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Nav -->
+<nav id="nav">
+  <a href="index.html" class="nav-logo"><span>SEA</span> Bloom Crystals</a>
+  <button class="nav-toggle" id="navToggle" aria-label="Menu">
+    <span></span><span></span><span></span>
+  </button>
+  <ul class="nav-links" id="navLinks">
+    <li><a href="#about">Story</a></li>
+    <li><a href="#events">Events</a></li>
+    <li><a href="#process">Experience</a></li>
+    <li><a href="booking.html" class="nav-cta">Book Now</a></li>
+  </ul>
+</nav>
+
+<!-- Hero -->
+<section class="hero" id="home">
+  <div class="hero-bg">
+    <div class="orb orb-1"></div>
+    <div class="orb orb-2"></div>
+    <div class="orb orb-3"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="hero-content">
+    <p class="eyebrow animate-1">Seattle · Natural Crystals · Intimate Gatherings</p>
+    <h1 class="hero-title animate-2">
+      <span class="title-line">SEA</span>
+      <span class="title-line italic">Bloom</span>
+      <span class="title-line">Crystals</span>
+    </h1>
+    <p class="hero-sub animate-3">
+      Handcrafted crystal experiences rooted in the Pacific Northwest.<br>
+      Every stone holds a story. Every gathering, a ritual.
+    </p>
+    <div class="hero-actions animate-4">
+      <a href="booking.html" class="btn-primary">Reserve Your Spot</a>
+      <a href="#events" class="btn-ghost">View Events</a>
+    </div>
+  </div>
+
+  <div class="hero-scroll animate-5">
+    <span>Scroll</span>
+    <div class="scroll-line"></div>
+  </div>
+</section>
+
+<!-- Featured Event Banner -->
+<section class="featured-banner">
+  <div class="banner-inner">
+    <div class="banner-gem">🌸</div>
+    <div class="banner-text">
+      <p class="banner-label">Next Event · Limited Spots</p>
+      <h3>Mother's Day Crystal Ritual</h3>
+      <p class="banner-meta">May 10, 2025 · Seattle · 10 spots only · $120</p>
+    </div>
+    <a href="booking.html" class="btn-primary">Book Now — $120</a>
+  </div>
+</section>
+
+<!-- About -->
+<section class="about section" id="about">
+  <div class="container">
+    <div class="about-grid">
+      <div class="about-visual reveal">
+        <div class="visual-stack">
+          <div class="vis-card vis-card-1">
+            <div class="vis-icon">💎</div>
+            <div class="vis-tag">Rose Quartz · Love</div>
+          </div>
+          <div class="vis-card vis-card-2">
+            <div class="vis-icon">🔮</div>
+            <div class="vis-tag">Amethyst · Clarity</div>
+          </div>
+          <div class="vis-card vis-card-3">
+            <div class="vis-icon">🌑</div>
+            <div class="vis-tag">Obsidian · Protection</div>
+          </div>
+        </div>
+        <div class="vis-badge">
+          <span>✦</span>
+          <p>Seattle<br>Local</p>
+        </div>
+      </div>
+
+      <div class="about-text reveal">
+        <p class="section-eyebrow">Our Story</p>
+        <h2 class="section-title">Born from the<br><em>Emerald City</em></h2>
+        <p>We are a Seattle-based crystal studio creating intimate, intentional DIY experiences where you connect with the earth's energy — and yourself.</p>
+        <p>Each event is a small gathering of just 10 people, guided by the lunar calendar and Pacific Northwest seasons. You leave with a handcrafted piece you made yourself, and a renewed sense of clarity.</p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <span class="pillar-num">10</span>
+            <span class="pillar-label">Max per event</span>
+          </div>
+          <div class="pillar-divider"></div>
+          <div class="pillar">
+            <span class="pillar-num">100%</span>
+            <span class="pillar-label">Natural stones</span>
+          </div>
+          <div class="pillar-divider"></div>
+          <div class="pillar">
+            <span class="pillar-num">SEA</span>
+            <span class="pillar-label">Seattle rooted</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Events -->
+<section class="events section" id="events">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">Upcoming Gatherings</p>
+      <h2 class="section-title">Choose Your <em>Ritual</em></h2>
+    </div>
+
+    <div class="events-grid">
+      <!-- Featured event -->
+      <div class="event-card event-featured reveal">
+        <div class="event-badge">Featured</div>
+        <div class="event-header">
+          <div class="event-gem">🌸</div>
+          <div class="event-status available">
+            <span class="status-dot"></span>
+            <span id="spots-remaining">10 spots left</span>
+          </div>
+        </div>
+        <p class="event-date">May 10, 2025 · Saturday · 2:00 PM</p>
+        <h3 class="event-name">Mother's Day Crystal Ritual</h3>
+        <p class="event-desc">Celebrate the mothers in your life — or yourself. Work with rose quartz, moonstone, and pearl to craft a bracelet of tenderness and strength. Includes guided intention-setting, tea ceremony, and a keepsake crystal meaning card.</p>
+        <ul class="event-includes">
+          <li>✦ All materials included</li>
+          <li>✦ Guided meditation</li>
+          <li>✦ Tea & light refreshments</li>
+          <li>✦ Crystal meaning card</li>
+          <li>✦ Gift-ready packaging</li>
+        </ul>
+        <div class="event-footer">
+          <div class="event-price-block">
+            <span class="event-price">$120</span>
+            <span class="event-per">per person</span>
+          </div>
+          <a href="booking.html" class="btn-primary">Reserve Now</a>
+        </div>
+      </div>
+
+      <!-- Upcoming events -->
+      <div class="events-upcoming">
+        <p class="upcoming-label">Coming Soon</p>
+
+        <div class="event-mini reveal">
+          <div class="event-mini-gem">🌑</div>
+          <div class="event-mini-info">
+            <p class="event-mini-date">June · New Moon</p>
+            <h4>New Moon Reset</h4>
+            <p>Black obsidian + clear quartz intention bracelets</p>
+          </div>
+          <span class="event-mini-price">~$85</span>
+        </div>
+
+        <div class="event-mini reveal">
+          <div class="event-mini-gem">🌿</div>
+          <div class="event-mini-info">
+            <p class="event-mini-date">July · Summer</p>
+            <h4>Protect Your Energy</h4>
+            <p>Black tourmaline + tiger's eye for grounding</p>
+          </div>
+          <span class="event-mini-price">~$85</span>
+        </div>
+
+        <div class="event-mini reveal">
+          <div class="event-mini-gem">🍂</div>
+          <div class="event-mini-info">
+            <p class="event-mini-date">Sept · Equinox</p>
+            <h4>Autumn Harvest</h4>
+            <p>Citrine + carnelian for abundance and warmth</p>
+          </div>
+          <span class="event-mini-price">~$85</span>
+        </div>
+
+        <a href="#" class="notify-link">Get notified when new events open →</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Process -->
+<section class="process section" id="process">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">The Experience</p>
+      <h2 class="section-title">What to <em>Expect</em></h2>
+    </div>
+
+    <div class="process-steps">
+      <div class="process-step reveal">
+        <div class="step-number">01</div>
+        <div class="step-content">
+          <h3>Arrive & Ground</h3>
+          <p>We open with herbal tea, soft music, and a brief grounding meditation to set the tone. No experience needed — just arrive as you are.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+
+      <div class="process-step reveal">
+        <div class="step-number">02</div>
+        <div class="step-content">
+          <h3>Choose Your Stones</h3>
+          <p>Browse a curated selection of natural crystals. Learn their properties, energies, and meanings — then let intuition guide your hand.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+
+      <div class="process-step reveal">
+        <div class="step-number">03</div>
+        <div class="step-content">
+          <h3>Craft with Intention</h3>
+          <p>With gentle guidance, create your bracelet or necklace. Each bead placed with purpose and presence. No skill required — only openness.</p>
+        </div>
+      </div>
+      <div class="process-connector"></div>
+
+      <div class="process-step reveal">
+        <div class="step-number">04</div>
+        <div class="step-content">
+          <h3>Take It Home</h3>
+          <p>Your piece comes in gift-ready packaging with a crystal meaning card and a weekly ritual suggestion to continue the energy at home.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials placeholder -->
+<section class="testimonials section">
+  <div class="container">
+    <div class="section-header reveal">
+      <p class="section-eyebrow">From Our Community</p>
+      <h2 class="section-title">Stories of <em>Connection</em></h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testimonial reveal">
+        <p class="testimonial-text">"I came alone not knowing anyone and left feeling like I'd found my people. The atmosphere was so calming and the bracelet I made is my most treasured piece of jewelry."</p>
+        <p class="testimonial-author">— Sarah M., Capitol Hill</p>
+      </div>
+      <div class="testimonial reveal">
+        <p class="testimonial-text">"Brought my mom for her birthday and we both cried happy tears. The ritual setting made it so much more meaningful than a regular craft class."</p>
+        <p class="testimonial-author">— Jenny L., Bellevue</p>
+      </div>
+      <div class="testimonial reveal">
+        <p class="testimonial-text">"Perfect size — just 10 people so it felt really personal. I loved how the host explained each crystal's energy. I've been back three times now."</p>
+        <p class="testimonial-author">— Mia K., Fremont</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section section" id="join">
+  <div class="cta-bg">
+    <div class="orb orb-cta-1"></div>
+    <div class="orb orb-cta-2"></div>
+  </div>
+  <div class="container">
+    <div class="cta-inner reveal">
+      <p class="section-eyebrow">Mother's Day · May 10</p>
+      <h2 class="cta-title">Only <em>10 Spots.</em><br>Don't Miss It.</h2>
+      <p class="cta-sub">A gift for her. A ritual for yourself. A memory that lasts.</p>
+      <a href="booking.html" class="btn-primary btn-large">Reserve Your Spot — $120</a>
+      <p class="cta-note">Secure checkout · Full refund if cancelled 48h before</p>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-brand">
+      <p class="footer-logo"><span>SEA</span> Bloom Crystals</p>
+      <p class="footer-tagline">Natural crystal experiences · Seattle, WA</p>
+      <div class="footer-social">
+        <a href="#" aria-label="Instagram">
+          <svg width="18" height="18" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+        </a>
+        <a href="#" aria-label="小红书">
+          <svg width="18" height="18" fill="currentColor" viewBox="0 0 24 24"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 14H9V10h2v6zm4 0h-2v-3.5c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5V16h-2v-6h2v1.1c.52-.73 1.34-1.1 2.25-1.1C13.76 10 15 11.24 15 13.25V16z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="footer-links-group">
+      <h4>Navigate</h4>
+      <ul>
+        <li><a href="#about">Our Story</a></li>
+        <li><a href="#events">Events</a></li>
+        <li><a href="#process">Experience</a></li>
+        <li><a href="booking.html">Book Now</a></li>
+      </ul>
+    </div>
+    <div class="footer-links-group">
+      <h4>Info</h4>
+      <ul>
+        <li><a href="#">FAQ</a></li>
+        <li><a href="#">Refund Policy</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer-newsletter">
+      <h4>Stay Connected</h4>
+      <p>Early access to new events + crystal wisdom</p>
+      <form class="newsletter-form" id="newsletterForm">
+        <input type="email" placeholder="your@email.com" required>
+        <button type="submit">→</button>
+      </form>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2025 SEA Bloom Crystals · Seattle, WA</p>
+    <p>Made with ✦ in the Pacific Northwest</p>
+  </div>
+</footer>
+
+<script src="main.js"></script>
+</body>
+</html>

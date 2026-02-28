@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Book Your Spot — SEA Bloom Crystals</title>
+<meta name="description" content="Reserve your spot at SEA Bloom Crystals Mother's Day event. Limited to 10 guests.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🔮</text></svg>">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400;1,600&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="booking.css">
+</head>
+<body class="booking-page">
+
+<div class="cursor" id="cursor"></div>
+<div class="cursor-ring" id="cursorRing"></div>
+
+<!-- Nav -->
+<nav id="nav" class="nav-solid">
+  <a href="index.html" class="nav-logo"><span>SEA</span> Bloom Crystals</a>
+  <ul class="nav-links">
+    <li><a href="index.html#about">Story</a></li>
+    <li><a href="index.html#events">Events</a></li>
+    <li><a href="index.html#process">Experience</a></li>
+    <li><a href="booking.html" class="nav-cta active">Book Now</a></li>
+  </ul>
+</nav>
+
+<main class="booking-main">
+  <!-- Left: Event Info -->
+  <div class="booking-info">
+    <div class="booking-info-inner">
+      <a href="index.html" class="back-link">← Back to events</a>
+
+      <div class="booking-event-header">
+        <div class="booking-gem">🌸</div>
+        <div>
+          <p class="booking-eyebrow">Mother's Day Gathering</p>
+          <h1 class="booking-title">Mother's Day<br><em>Crystal Ritual</em></h1>
+        </div>
+      </div>
+
+      <div class="booking-details">
+        <div class="detail-row">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg>
+          <span>Saturday, May 10, 2025</span>
+        </div>
+        <div class="detail-row">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/></svg>
+          <span>2:00 PM – 4:30 PM (2.5 hours)</span>
+        </div>
+        <div class="detail-row">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M12 21s-8-5.5-8-11a8 8 0 0116 0c0 5.5-8 11-8 11z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Seattle, WA · Address sent upon booking</span>
+        </div>
+        <div class="detail-row">
+          <svg width="16" height="16" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+          <span id="spots-info">10 spots total · <strong id="spots-left">10 left</strong></span>
+        </div>
+      </div>
+
+      <div class="booking-includes">
+        <p class="includes-title">What's included</p>
+        <ul>
+          <li><span>✦</span> All crystal materials & wire/cord</li>
+          <li><span>✦</span> Guided bracelet crafting</li>
+          <li><span>✦</span> Opening meditation & intention-setting</li>
+          <li><span>✦</span> Herbal tea & light refreshments</li>
+          <li><span>✦</span> Crystal meaning card to take home</li>
+          <li><span>✦</span> Gift-ready packaging (perfect for mom!)</li>
+        </ul>
+      </div>
+
+      <div class="booking-policy">
+        <p>💛 Full refund if cancelled 48+ hours before the event.</p>
+        <p>Questions? <a href="mailto:hello@seabloomcrystals.com">hello@seabloomcrystals.com</a></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Right: Booking Form -->
+  <div class="booking-form-panel">
+    <div class="booking-form-inner">
+
+      <!-- Spots counter -->
+      <div class="spots-counter">
+        <div class="spots-visual">
+          <div class="spots-dots" id="spotsDots">
+            <!-- filled by JS -->
+          </div>
+        </div>
+        <p class="spots-label"><span id="spotsCountLabel">10</span> of 10 spots remaining</p>
+      </div>
+
+      <div class="form-divider"></div>
+
+      <!-- Step 1: Your Info -->
+      <div class="form-step" id="step1">
+        <h2 class="form-step-title">Your Information</h2>
+
+        <form id="bookingForm">
+          <div class="form-group">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Rose" required>
+          </div>
+          <div class="form-group">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Chen" required>
+          </div>
+          <div class="form-group">
+            <label for="email">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="rose@email.com" required>
+            <p class="field-hint">Event details & address will be sent here</p>
+          </div>
+          <div class="form-group">
+            <label for="phone">Phone (optional)</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (206) 000-0000">
+          </div>
+          <div class="form-group">
+            <label for="guests">Number of spots</label>
+            <select id="guests" name="guests">
+              <option value="1">1 spot — $120</option>
+              <option value="2">2 spots — $240</option>
+              <option value="3">3 spots — $360</option>
+            </select>
+            <p class="field-hint">Bringing a friend or family member?</p>
+          </div>
+          <div class="form-group">
+            <label for="notes">Special requests (optional)</label>
+            <textarea id="notes" name="notes" rows="3" placeholder="Allergies, accessibility needs, or anything else..."></textarea>
+          </div>
+
+          <div class="form-group form-checkbox">
+            <input type="checkbox" id="terms" name="terms" required>
+            <label for="terms">I understand the refund policy — full refund if cancelled 48+ hours before the event.</label>
+          </div>
+
+          <div class="price-summary">
+            <div class="price-row">
+              <span>1 × Mother's Day Crystal Ritual</span>
+              <span id="price-display">$120.00</span>
+            </div>
+            <div class="price-row price-total">
+              <span>Total</span>
+              <span id="total-display">$120.00</span>
+            </div>
+          </div>
+
+          <button type="submit" class="btn-primary btn-large btn-full" id="checkoutBtn">
+            <span id="btnText">Continue to Payment →</span>
+            <span id="btnLoader" style="display:none">Processing...</span>
+          </button>
+        </form>
+      </div>
+
+      <!-- Success state -->
+      <div class="form-success" id="formSuccess" style="display:none">
+        <div class="success-icon">✦</div>
+        <h2>You're reserved!</h2>
+        <p>Check your email for confirmation and event details. We can't wait to see you on May 10th. 🌸</p>
+        <a href="index.html" class="btn-ghost">Back to home</a>
+      </div>
+
+      <!-- Sold out state -->
+      <div class="form-soldout" id="formSoldout" style="display:none">
+        <div class="soldout-icon">🌙</div>
+        <h2>This event is full</h2>
+        <p>Join our waitlist and we'll notify you if a spot opens up, or when our next event launches.</p>
+        <form id="waitlistForm">
+          <input type="email" placeholder="your@email.com" required>
+          <button type="submit" class="btn-primary">Join Waitlist</button>
+        </form>
+      </div>
+
+    </div>
+  </div>
+</main>
+
+<!-- Stripe JS -->
+<script src="https://js.stripe.com/v3/"></script>
+<script src="main.js"></script>
+<script src="booking.js"></script>
+</body>
+</html>
